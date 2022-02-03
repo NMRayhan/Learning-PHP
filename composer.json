@@ -1,15 +1,11 @@
 {
-  "name": "Learning-PHP/Learning-PHP",
-  "type" : "project",
-  "description": "",
+  "name": "php/php",
+  "type": "project",
+  "description": "A Simple Class Project",
+  "license": "MIT",
   "keywords": [],
-  "license": "",
-  "require": {
-
-  },
-  "require-dev": {
-
-  },
+  "req-uire": {},
+  "require-dev": {},
   "autoload": {
     "psr-4": {
       "App\\": "app/"
