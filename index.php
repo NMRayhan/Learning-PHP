@@ -4,3 +4,7 @@ use App\classes\Example;
 
 $example = new Example();
 $example->index();
+
+echo '<br/>';
+
+echo $example -> firstName;

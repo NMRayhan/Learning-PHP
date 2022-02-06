@@ -4,15 +4,19 @@ namespace App\classes;
 
 class Example
 {
-    public $userAge = 25;
     public $firstName = "Nur Mohammad ";
     public $lastName = "Rayhan";
+    public $firstNumber = true;
+    public $lastNumber;
 
 
     public function index()
     {
+        //this is also Single line Comments;
+        #this is also Single line Comments;
         $firstName = $this->firstName;
         $lastName = $this->lastName;
-        echo $firstName.$lastName;
+        $firstNumber = $this ->firstNumber;
+        echo gettype($this ->firstNumber);
     }
 }
