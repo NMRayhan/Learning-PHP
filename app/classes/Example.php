@@ -26,10 +26,12 @@ class Example extends Person
 
     public function methodLast(){
         $this ->lastName = ' Rayhan';
-        echo $this ->lastName;
+        print($this ->lastName);
     }
 
     public function personMethod(){
         echo $this->districtName();
+        echo $this->divisionName();
+        echo $this->getCountryName();
     }
 }

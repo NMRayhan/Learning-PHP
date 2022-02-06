@@ -11,14 +11,18 @@ class Person
     private $country;
 
     public function districtName(){
-        echo 'Feni';
+        echo 'Feni,';
     }
 
     protected function divisionName(){
-        echo 'Chittagong';
+        echo (' Chittagong,');
+    }
+
+    public function getCountryName(){
+        $this->countryName();
     }
 
     private function countryName(){
-        echo 'Bangladesh';
+        echo ' Bangladesh';
     }
 }

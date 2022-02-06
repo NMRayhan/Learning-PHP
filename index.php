@@ -2,14 +2,19 @@
 require_once 'vendor/autoload.php';
 use App\classes\Example;
 use App\classes\Person;
+use App\classes\Operator;
 
-$example = new Example();
-//$personObject = new Person();
-$example->methodFirst();
-$example->methodSecond();
-$example ->methodLast();
+$operatorObj = new Operator();
 
+$operatorObj->index();
 
-echo '<p>Person Object<p/>';
-
-$example ->personMethod();
+//$example = new Example();
+////$personObject = new Person();
+//$example->methodFirst();
+//$example->methodSecond();
+//$example ->methodLast();
+//
+//
+//echo '<p>Person Object<p/>';
+//
+//$example ->personMethod();
