@@ -18,18 +18,37 @@ class Operator
         * Logical Operator(&&, ||, !)
 
 */
-    public $firstNumber=25;
-    public $secondNumber=35;
+    public $firstNumber=10;
+    public $secondNumber=20;
 
 
     public function index()
     {
-        echo ($this->firstNumber + $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber - $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber * $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber / $this->secondNumber);
+
+//        Assignment Operator
+        echo ($this->firstNumber = $this->secondNumber);
+
+
+////        Unary Operator
+//        echo $this->firstNumber++;
+//        echo ('<br/>');
+//        echo $this->firstNumber;
+//        echo ('<br/>');
+//        echo $this->firstNumber--;
+//        echo ('<br/>');
+//        echo ++$this->firstNumber;
+//        echo ('<br/>');
+//        echo $this->firstNumber;
+
+
+
+////          binary operator
+//        echo ($this->firstNumber + $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber - $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber * $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber / $this->secondNumber);
     }
 }
