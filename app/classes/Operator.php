@@ -20,24 +20,37 @@ class Operator
 */
     public $firstNumber=10;
     public $secondNumber=20;
+    public $thirdNumber=30;
 
 
     public function index()
     {
 
-//        Assignment Operator
-        echo ($this->firstNumber += $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber -= $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber *= $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber /= $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber %= $this->secondNumber);
-        echo ('<br/>');
-        echo ($this->firstNumber .= $this->secondNumber);
-        echo ('<br/>');
+//        Logical Operator
+        echo ('.....<br/>');
+        echo ($this->firstNumber > $this->secondNumber) || ($this->secondNumber > $this->thirdNumber); // false
+        echo ('<br/>.....<br/>');
+        echo ($this->firstNumber > $this->secondNumber) || ($this->secondNumber < $this->thirdNumber); //true
+        echo ('<br/>.....<br/>');
+        echo ($this->firstNumber < $this->secondNumber) || ($this->secondNumber > $this->thirdNumber); //true
+        echo ('<br/>.....<br/>');
+        echo ($this->firstNumber < $this->secondNumber) || ($this->secondNumber < $this->thirdNumber); //true
+        echo ('<br/>.....');
+
+
+////        Assignment Operator
+//        echo ($this->firstNumber += $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber -= $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber *= $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber /= $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber %= $this->secondNumber);
+//        echo ('<br/>');
+//        echo ($this->firstNumber .= $this->secondNumber);
+//        echo ('<br/>');
 
 
 ////        Unary Operator
