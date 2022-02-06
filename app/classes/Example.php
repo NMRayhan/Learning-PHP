@@ -2,21 +2,34 @@
 
 namespace App\classes;
 
-class Example
+class Example extends Person
 {
-    public $firstName = "Nur Mohammad ";
-    public $lastName = "Rayhan";
-    public $firstNumber = true;
-    public $lastNumber;
+    public $firstName;
+    protected $middleName;
+    private $lastName;
+    public $firstNumber = 10;
+    protected $middleNumber = 20;
+    private $lastNumber = 30;
 
 
-    public function index()
-    {
-        //this is also Single line Comments;
-        #this is also Single line Comments;
-        $firstName = $this->firstName;
-        $lastName = $this->lastName;
-        $firstNumber = $this ->firstNumber;
-        echo gettype($this ->firstNumber);
+    public function methodFirst(){
+        $this ->firstName = 'Nur ';
+        echo $this->firstName;
+        echo '<br>';
+        echo $this ->firstNumber;
+    }
+
+    public function methodSecond(){
+        $this ->middleName = ' Mohammad';
+        echo $this ->middleName;
+    }
+
+    public function methodLast(){
+        $this ->lastName = ' Rayhan';
+        echo $this ->lastName;
+    }
+
+    public function personMethod(){
+        echo $this->districtName();
     }
 }

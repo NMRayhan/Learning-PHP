@@ -1,10 +1,15 @@
 <?php
 require_once 'vendor/autoload.php';
 use App\classes\Example;
+use App\classes\Person;
 
 $example = new Example();
-$example->index();
+//$personObject = new Person();
+$example->methodFirst();
+$example->methodSecond();
+$example ->methodLast();
 
-echo '<br/>';
 
-echo $example -> firstName;
+echo '<p>Person Object<p/>';
+
+$example ->personMethod();
