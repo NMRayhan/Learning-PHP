@@ -26,7 +26,18 @@ class Operator
     {
 
 //        Assignment Operator
-        echo ($this->firstNumber = $this->secondNumber);
+        echo ($this->firstNumber += $this->secondNumber);
+        echo ('<br/>');
+        echo ($this->firstNumber -= $this->secondNumber);
+        echo ('<br/>');
+        echo ($this->firstNumber *= $this->secondNumber);
+        echo ('<br/>');
+        echo ($this->firstNumber /= $this->secondNumber);
+        echo ('<br/>');
+        echo ($this->firstNumber %= $this->secondNumber);
+        echo ('<br/>');
+        echo ($this->firstNumber .= $this->secondNumber);
+        echo ('<br/>');
 
 
 ////        Unary Operator
