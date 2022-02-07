@@ -4,7 +4,7 @@
 namespace App\classes;
 
 
-class Person
+class Person extends Execution
 {
     public $district;
     protected $division;
@@ -12,6 +12,10 @@ class Person
 
     public function districtName(){
         echo 'Feni,';
+    }
+
+    public function getDivisionName(){
+        $this->divisionName();
     }
 
     protected function divisionName(){
@@ -24,5 +28,11 @@ class Person
 
     private function countryName(){
         echo ' Bangladesh';
+    }
+
+    public function loopExecution($start,$number){
+        for ($this->i=$number; $this->i >= $start; $this->i--){
+            echo ('<br/>Hello World - '.$this->i);
+        }
     }
 }

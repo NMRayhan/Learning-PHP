@@ -4,9 +4,16 @@ use App\classes\Example;
 use App\classes\Person;
 use App\classes\Operator;
 
-$operatorObj = new Operator();
+//$operatorObj = new Operator();
 
-$operatorObj->index();
+$person = new Person();
+
+$person ->districtName();
+$person ->getDivisionName();
+$person ->getCountryName();
+$person ->loopExecution(10,20);
+
+//$operatorObj->index();
 
 //$example = new Example();
 ////$personObject = new Person();
