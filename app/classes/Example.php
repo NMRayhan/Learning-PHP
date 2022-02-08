@@ -1,37 +1,111 @@
 <?php
 
-namespace App\classes;
 
-class Example extends Person
+namespace App\Classes;
+
+
+class Example
 {
-    public $firstName;
-    protected $middleName;
-    private $lastName;
-    public $firstNumber = 10;
-    protected $middleNumber = 20;
-    private $lastNumber = 30;
+    public $name;
+    public $data = [];
+    public $i;
 
 
-    public function methodFirst(){
-        $this ->firstName = 'Nur ';
-        echo $this->firstName;
-        echo '<br>';
-        echo $this ->firstNumber;
-    }
+    public function index()
+    {
+        $this->name = "BITM";
+        $this->name = "BASIS";
+        $this->name = "SEIP";
 
-    public function methodSecond(){
-        $this ->middleName = ' Mohammad';
-        echo $this ->middleName;
-    }
+        $this->data = [
+            0 => [
+                'name'  => 'Sagor',
+                'email' => 'Sagor12@gmail.com',
+                'ID'    => '123456',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            1 => [
+                'name'  => 'Rayhan',
+                'email' => 'Rayhan@gmail.com',
+                'ID'    => '354435',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            2 => [
+                'name'  => 'Chondan',
+                'email' => 'Chondan@gmail.com',
+                'ID'    => '643465',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            3 => [
+                'name'  => 'Tamim',
+                'email' => 'Tamim@gmail.com',
+                'ID'    => '987689',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            4 => [
+                'name'  => 'Shaiful',
+                'email' => 'Shaiful@gmail.com',
+                'ID'    => '320975',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            5 => [
+                'name'  => 'Ashraful',
+                'email' => 'Ashraful@gmail.com',
+                'ID'    => '420420',
+                'mobile' => [
+                    'person'=>'0177personal',
+                    'Guardian'=>'0177guardian',
+                ]
+            ],
+            6 => 'BITM',
+            7 => [
+                'name' => 'Sojib',
+                'email' => 'sajib@gmail.com',
+                'mobile' => '661264',
+            ]
+        ];
 
-    public function methodLast(){
-        $this ->lastName = ' Rayhan';
-        print($this ->lastName);
-    }
+//        echo $this->data[0]['name'].'<br/>';
 
-    public function personMethod(){
-        echo $this->districtName();
-        echo $this->divisionName();
-        echo $this->getCountryName();
+//        echo 'Length of Array : '.count($this->data).'<br/>';
+
+//        foreach ($this->data as $key => $item){
+//            if (is_array($item))
+//            {
+//                foreach ($item as $value){
+//                    if (is_array($value)){
+//                        foreach ($value as $v_value){
+//                            echo $v_value.' ';
+//                        }
+//                    }else{
+//                        echo $value.' ';
+//                    }
+//                }
+//            }
+//            else
+//            {
+//                echo $item.' ';
+//            }
+//            echo '<br/>';
+//        }
+
+//        echo '<pre>';
+//        print_r($this->data);
+//        var_dump($this->data);
     }
 }
